@@ -1,0 +1,177 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(197, 197, 197);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+}
+
+.container-satu {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.kolom-utama {
+    flex: 3;
+    order: 2;
+    background-color: rgb(129, 129, 255);
+    padding: 10px 10px;
+    text-align: justify;
+    font-size: 13px;
+}
+
+.sidebar-satu {
+    flex: 1;
+    order: 1;
+    background-color: rgb(193, 226, 115);
+    padding: 10px 10px;
+    font-size: 13px;
+}
+
+.sidebar-dua {
+    flex: 1;
+    order: 3;
+    background-color: rgb(226, 115, 121);
+    padding: 10px 10px;
+    font-size: 13px;
+}
+
+.container-dua {
+    max-width: 800px;
+    margin: 50px auto;
+
+}
+
+.layanan {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.layanan.satu {
+    background-color: rgb(145, 145, 255);
+}
+
+.layanan.dua {
+    background-color: rgb(255, 145, 237);
+}
+
+.layanan.tiga {
+    background-color: rgb(255, 204, 145);
+}
+
+.container-tiga {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+}
+
+.thumbnail img {
+    width: 100%
+}
+
+.container-empat {
+    max-width: 800px;
+    margin: 50px auto;
+    
+    /* justify-content: space-between; */
+}
+
+.card {
+    border: 1px solid #797979;
+    border-radius: 10px;
+    background-color: #cecece;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.header.besar {
+    background-color: #ff3232;
+}
+
+.header {
+    height: 50px;
+    background-color: #575656;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .content {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+button {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px;
+}
+
+button:hover {
+    background-color: rgb(66, 10, 119);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px;
+}
+
+
+/* Responsive */
+@media(min-width: 600px) {
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .kolom-utama, 
+    .sidebar-satu, 
+    .sidebar-dua {
+        font-size: 16px;
+    }
+
+    .layanan {
+        width: 30%;
+    }
+
+    .thumbnail {
+        width: 20%;
+    }
+
+    .container-empat {
+        display: flex;
+    }
+
+    .card.besar {
+        transform: scale(1.13);
+    }
+
+    .header.besar {
+        background-color: #ff3232;
+    }
+
+}
